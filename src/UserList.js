@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React,{useEffect} from "react";
 
 function User({user,onRemove,onToggle}){
@@ -13,6 +14,10 @@ function User({user,onRemove,onToggle}){
 //  useEffect(() => {
 //     console.log(user);
 //   });
+=======
+import React from "react";
+const User = React.memo=(function User({user,onRemove,onToggle}){
+>>>>>>> eecc3b02187dc84a10de0103728e4ed2b20c2a54
     return(
         <div>
         <b
@@ -28,8 +33,7 @@ function User({user,onRemove,onToggle}){
         <button onClick={()=>onRemove(user.id)}>삭제</button>
         </div>
     );
-}
-
+});
 
 function UserList({users,onRemove,onToggle}){
     return(
